@@ -9,12 +9,19 @@ And type after this code that :
 	var alert:FlxSprite;
   
   
-  after that search This : super.create();
+  after that search This : 
+  
+  super.create();
   
   and type : 
+  
   ableToDodge = true;
   
-  after that search This : CustomFadeTransition.nextCamera = camOther;
+  after that search This : 
+  
+  CustomFadeTransition.nextCamera = camOther;
+  
+  
   and type :
   
   
