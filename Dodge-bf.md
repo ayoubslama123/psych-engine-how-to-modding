@@ -1,10 +1,14 @@
 Start By search This In PlayState.hx : public var cameraSpeed:Float = 1; 
 And type after this code that :
-  var ableToDodge:Bool = false;
+        
+	
+	var ableToDodge:Bool = false;
 	var dodging:Bool = false;
 	var dodgeTimer:Float = 0.22625;
 	var dodgeCooldown:Float = 0.1135;
 	var alert:FlxSprite;
+  
+  
   after that search This : super.create();
   
   and type : 
@@ -12,6 +16,8 @@ And type after this code that :
   
   after that search This : CustomFadeTransition.nextCamera = camOther;
   and type :
+  
+  
   function dodge(ableToDodge:Bool = false){
 	if(curSong.toLowerCase() == 'your-song'){
 		if(ableToDodge){
@@ -37,8 +43,13 @@ function dodgeWarn(warnCanAppear:Bool = false){
 	}
 }
 
+
 search this : super.update(elapsed);
+
+
 and type :
+
+
 if (curSong.toLowerCase() == "your-song"){
 			if(FlxG.keys.justPressed.SPACE && !dodging && ableToDodge){
 				dodging = true;
@@ -61,8 +72,15 @@ if (curSong.toLowerCase() == "your-song"){
 			}
 		}
     
-    search this code : callOnLuas('onStepHit', []);
+    
+    search this code : 
+    
+    callOnLuas('onStepHit', []);
+    
+    
     and type after this code that:
+    
+    
     if (curSong.toLowerCase() == "your-song"){
 			switch (curStep){
 				case 90:
@@ -76,6 +94,8 @@ if (curSong.toLowerCase() == "your-song"){
 	}
   
   now go to your song state and add this :
+  
+  
   alert = new FlxSprite().loadGraphic(Paths.image('your-image'));
 				alert.cameras = [camHUD];
 				alert.y = 205;
