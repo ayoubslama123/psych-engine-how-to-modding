@@ -104,10 +104,17 @@ if (curSong.toLowerCase() == "your-song"){
   
   
   alert = new FlxSprite().loadGraphic(Paths.image('your-image'));
+  
 				alert.cameras = [camHUD];
+				
 				alert.y = 205;
+				
 				alert.x = FlxG.width - 700;//your positions
+				
 				alert.antialiasing = ClientPrefs.globalAntialiasing;
+				
 				alert.setGraphicSize(Std.int(alert.width * 1.5));//if you want it to be bigger or more tiny use this
+				
 				alert.frames = Paths.getSparrowAtlas('your-image');//the png and xml you are going to use
+				
 				alert.animation.addByPrefix('the-animation-name', 'anim-in-xml', 24, false);//your anim name and xml
