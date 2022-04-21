@@ -105,7 +105,7 @@ if (curSong.toLowerCase() == "your-song"){
   
   alert = new FlxSprite().loadGraphic(Paths.image('your-image'));
   
-				alert.cameras = [camHUD];
+  alert.cameras = [camHUD];
 				
 				alert.y = 205;
 				
